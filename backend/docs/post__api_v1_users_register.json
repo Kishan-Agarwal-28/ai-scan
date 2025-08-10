@@ -1,0 +1,137 @@
+{
+  "method": "POST",
+  "path": "/api/v1/users/register",
+  "originalPath": "/api/v1/users/register",
+  "query": {},
+  "params": {},
+  "body": {
+    "type": "json",
+    "schema": {
+      "type": "string",
+      "nullable": true
+    },
+    "signature": "primitive"
+  },
+  "timestamp": "2025-08-10T10:35:24.428Z",
+  "customData": {},
+  "extensions": {
+    "originalUrl": "/api/v1/users/register"
+  },
+  "response": {
+    "statusCode": 200,
+    "statusMessage": "OK",
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "set-cookie": [
+        "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODk4NzVlZWFkMDQ1MGNjYmMwNjVmMGYiLCJlbWFpbCI6ImFAYS5jb20iLCJ1c2VybmFtZSI6ImFiZCIsImlhdCI6MTc1NDgyMjEyNywiZXhwIjoxNzU0OTA4NTI3fQ.pMJVRyXL0PPKItVrtS1tCQzrC0567OsjJZqd5v1xA7Q; Path=/; HttpOnly; Secure",
+        "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODk4NzVlZWFkMDQ1MGNjYmMwNjVmMGYiLCJpYXQiOjE3NTQ4MjIxMjcsImV4cCI6MTc1NTY4NjEyN30.4BJe73XZBfHUVK-px80Yqvb5SLxcNzB8q7hpveTfbsg; Path=/; HttpOnly; Secure"
+      ],
+      "content-type": "application/json; charset=utf-8",
+      "etag": "W/\"1bb-jjqUpZWon/nqwFCthkFjCBqcuLY\""
+    },
+    "cookies": [
+      "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODk4NzVlZWFkMDQ1MGNjYmMwNjVmMGYiLCJlbWFpbCI6ImFAYS5jb20iLCJ1c2VybmFtZSI6ImFiZCIsImlhdCI6MTc1NDgyMjEyNywiZXhwIjoxNzU0OTA4NTI3fQ.pMJVRyXL0PPKItVrtS1tCQzrC0567OsjJZqd5v1xA7Q; Path=/; HttpOnly; Secure",
+      "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODk4NzVlZWFkMDQ1MGNjYmMwNjVmMGYiLCJpYXQiOjE3NTQ4MjIxMjcsImV4cCI6MTc1NTY4NjEyN30.4BJe73XZBfHUVK-px80Yqvb5SLxcNzB8q7hpveTfbsg; Path=/; HttpOnly; Secure"
+    ],
+    "redirects": [],
+    "customData": {},
+    "body": {
+      "type": "json",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "example": 200
+          },
+          "data": {
+            "type": "object",
+            "properties": {
+              "_id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string",
+                "format": "email"
+              },
+              "avatar": {
+                "type": "string"
+              },
+              "verificationToken": {
+                "type": "string"
+              },
+              "isVerified": {
+                "type": "boolean",
+                "example": false
+              },
+              "verificationTokenExpiryDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "__v": {
+                "type": "integer",
+                "example": 0
+              }
+            },
+            "required": [
+              "_id",
+              "username",
+              "email",
+              "avatar",
+              "verificationToken",
+              "isVerified",
+              "verificationTokenExpiryDate",
+              "createdAt",
+              "updatedAt",
+              "__v"
+            ]
+          },
+          "message": {
+            "type": "string"
+          },
+          "success": {
+            "type": "boolean",
+            "example": true
+          }
+        },
+        "required": [
+          "statusCode",
+          "data",
+          "message",
+          "success"
+        ]
+      },
+      "example": {
+        "statusCode": 200,
+        "data": {
+          "_id": "689875eead0450ccbc065f0f",
+          "username": "abd",
+          "email": "a@a.com",
+          "avatar": "http://res.cloudinary.com/dxdbirdfv/image/upload/v1754822125/baeafghxxlbpyboqqz2c.png",
+          "verificationToken": "KjmfvsmBT6",
+          "isVerified": false,
+          "verificationTokenExpiryDate": "2044-10-09T10:35:24.455Z",
+          "createdAt": "2025-08-10T10:35:26.350Z",
+          "updatedAt": "2025-08-10T10:35:26.350Z",
+          "__v": 0
+        },
+        "message": "User registered successfully",
+        "success": true
+      },
+      "signature": "data:object:__v:number|_id:string|avatar:string|createdAt:string|email:string|isVerified:boolean|updatedAt:string|username:string|verificationToken:string|verificationTokenExpiryDate:string|message:string|statusCode:number|success:boolean"
+    }
+  },
+  "lastUpdated": "2025-08-10T10:35:27.718Z"
+}
